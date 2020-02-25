@@ -83,3 +83,9 @@ $orangeColor: #f47b1e;
 a {
     text-decoration: none;
 }
+.page{
+    margin: 0;
+    padding: 0;
+    font-family: $mainFont;
+    background: $backgroundColor;
+}
