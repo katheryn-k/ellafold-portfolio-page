@@ -364,3 +364,51 @@ a {
 .business-card__position__link{
     color: $orangeColor;
 }
+.services{
+    @include grid__flow(row);
+    grid-gap: 1.5em;
+    padding: 4em 0;
+    color: $fontColor;
+}
+.services__title{
+    @include section__title();
+    margin: auto;
+    text-align: center;
+}
+.services__wrapper{
+    @include grid__flow(column);
+    padding: 1em 2em;
+    
+}
+.services__item{
+    @include grid__flow(column);
+    @media(max-width: 960px){
+        @include grid__flow(row);
+        grid-gap: 1.5em;
+    }
+}
+.services__content{
+    @include grid__flow(column);
+    align-items: center;
+    @media(max-width: 960px){
+        @include grid__flow(row);
+    }
+}
+.services__icon{
+    margin: 0 1.5em;
+    padding: 1.5em;
+    border: 1px solid $fontColor;
+    border-radius: 50%;
+    @media(max-width: 960px){
+        margin: auto;
+    }
+}
+.services__text{
+    line-height: 2;
+    @media(max-width: 960px){
+        text-align: center;
+    }
+    .services__subtitle{
+        @include sm-title__font-size();
+    }
+}

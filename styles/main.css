@@ -530,4 +530,95 @@ a {
 .business-card__position__link {
   color: #f47b1e;
 }
+
+.services {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 1.5em;
+  padding: 4em 0;
+  color: #fff;
+}
+
+.services__title {
+  padding: 1em;
+  font-size: 2em;
+  line-height: 2;
+  border-bottom: 1px solid #f47b1e;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .services__title {
+    padding: 2em;
+    font-size: 1em;
+  }
+}
+
+.services__wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 1em 2em;
+}
+
+.services__item {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+@media (max-width: 960px) {
+  .services__item {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1.5em;
+  }
+}
+
+.services__content {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 960px) {
+  .services__content {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+.services__icon {
+  margin: 0 1.5em;
+  padding: 1.5em;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 960px) {
+  .services__icon {
+    margin: auto;
+  }
+}
+
+.services__text {
+  line-height: 2;
+}
+
+@media (max-width: 960px) {
+  .services__text {
+    text-align: center;
+  }
+}
+
+.services__text .services__subtitle {
+  font-size: 14px;
+}
 /*# sourceMappingURL=main.css.map */
