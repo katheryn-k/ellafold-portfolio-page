@@ -6,3 +6,49 @@ $backgroundColor: #111111;
 $fontColor: #fff;
 $grayColor: #b1b1b1;;
 $orangeColor: #f47b1e;
+
+@mixin header__button {
+    padding: 0.8em;
+    line-height: 1.5em;
+    border-radius: 3px;
+    opacity: 1;
+    transition: .3s all ease;
+    color: $fontColor;
+}
+@mixin h-button__media {
+    padding: 0.4em;
+    font-size: 0.75em;
+}
+@mixin gallery__layout {
+    display: grid;
+    grid-auto-flow: column;
+    grid-row-gap: 1em;
+}
+@mixin section__title {
+    padding: 1em;
+    font-size: 2em;
+    line-height: 2;
+    border-bottom: 1px solid $orangeColor;
+    @media(max-width: 960px){
+        padding: 2em;
+        font-size: 1em;
+    }
+}
+@mixin grid__flow ($value) {
+    display: grid;
+    grid-auto-flow: ($value);
+}
+@mixin input__style {
+    padding: 0 1em;
+    font-size: 1em;
+    line-height: 2;
+    border: 2px solid $fontColor;
+    outline:none;
+    background: transparent;
+}
+@mixin sm-title__font-size {
+    font-size: 14px;
+}
+@mixin sm-subtitle__font-size {
+    font-size:  0.75em;
+}
