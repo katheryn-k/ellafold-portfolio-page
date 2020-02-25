@@ -9,10 +9,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <!--  Fontawesome  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
     <title>ELFOLD</title>
 </head>
-<body>
+<body class="page">
+    <!-- HEADER -->
+    <header class="header page__head" id="top">
+        <a class="header__logo" href="#">ELFOLD<span class="header__logo-gray">onepage</span></a>
+    <!--  NAVBAR  -->
+        <nav class="navigation">
+            <a class="navbar__link_first" onclick="$('#top').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#top">Home</a>
+            <a class="navbar__link" onclick="$('#portfolio').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#portfolio">Portfolio</a>
+            <a class="navbar__link" onclick="$('#about').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#about">About</a>
+            <a class="navbar__link" onclick="$('#services').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#services">Services</a>
+            <a class="navbar__link" onclick="$('#contact').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#contact">Contact</a>
+        </nav>
+        <div class="header__content">
+            <h1 class="header__title wow fadeInDown">
+                Welcome! <br>
+                I am Ella Fold
+            </h1>
+            <p class="header__subtitle">
+                I am a New York based developer specialized in branding and web design. <br>
+                Take a look at my work and if you like it I would love to hear from you!
+            </p>
+            <div class="header__button">
+                <a class="button_learn-more" href="#">Learn more</a>
+                <a class="button_get-in-touch" href="#">Get in Touch</a>
+            </div>
+            <a class="next-section__link" onclick="$('.next-section').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#next-section">
+                <i class="next-section__icon fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
     
+    
+<!-- Scripts -->
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- animatescroll -->
+<script src="./js/animatescroll.js"></script>
+<!-- numscroller -->
+<script src="./js/numscroller-1.0.js"></script>
+<!-- owl carousel -->
+<script src="./js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<!-- main.js -->
+<script src="./js/main.js"></script>
 </body>
 </html>
