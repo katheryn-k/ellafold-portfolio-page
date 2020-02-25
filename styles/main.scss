@@ -461,6 +461,8 @@ a {
 }
 .form__message{
     grid-area: c-form-textarea;
+    padding: 5px;
+    resize: none;
     @include input__style();
     @media(max-width: 960px){
         @include sm-subtitle__font-size();
@@ -486,4 +488,45 @@ a {
     border: 2px solid transparent;
     background: $backgroundColor;
     color: $orangeColor;
+}
+.footer__text{
+    padding: 2em 0;
+    text-align: center;
+    color: $fontColor;
+}
+.footer__title{
+    font-size: 2em;
+    @media(max-width: 960px){
+        margin: 0.5em;
+        @include sm-title__font-size();
+        line-height: 2;
+    }
+}
+.social__links{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: "footer_link footer_link footer_link";
+    grid-gap: 0.5em;
+    justify-content: center;
+    padding: 4em 0;
+}
+.social__link{
+    margin: auto;
+}
+.social__icon{
+    grid-area: footer_link;
+    padding: 1em;
+    font-size: 2em;
+    border: 4px solid $fontColor;
+    box-shadow: 0 0 0 rgba(250, 250, 250, 0.4);
+    border-radius: 50%;
+    color: $fontColor;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    @media(max-width: 960px){
+        margin: auto;
+        padding: 0.7em;
+        @include sm-title__font-size();
+        border: 2px solid $fontColor;
+    }
 }
