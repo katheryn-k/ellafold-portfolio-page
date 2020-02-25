@@ -311,3 +311,56 @@ a {
         }
     }
 }
+.reviews{
+    padding: 15em 0;
+    text-align: center;
+    background: url(../assets/img/bg/slider-bg.jpg) center center / cover no-repeat;
+    background-attachment: fixed;
+    color: $fontColor;
+    @media(max-width: 960px){
+        padding: 5em 0;
+    }
+}
+.reviews__title{
+    font-size: 1.7em;
+    line-height: 2;
+    border-bottom: 1px solid $orangeColor;
+    @media(max-width: 960px){
+        padding: 0 1em;
+        @include sm-subtitle__font-size();
+    }
+}
+.reviews__text{
+    margin-bottom: 4em;
+    padding: 0 1em;
+    line-height: 2;
+}
+.slide__business-card{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 0.5fr 1fr;
+    grid-template-areas: ". bc-photo bc-info .";
+    padding: 5em 0;
+    align-items: center;
+    @media(max-width: 960px){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "bc-photo" "bc-info";
+        padding: 0;
+        justify-items: center;
+    }
+}
+.slide__text {
+    padding: 2px 5px;
+    line-height: 2;
+}
+.business-card__photo{
+    grid-area: bc-photo;
+    width: 5em;
+    border-radius: 50%;
+}
+.business-card__info{
+    grid-area: bc-info;
+}
+.business-card__position__link{
+    color: $orangeColor;
+}
