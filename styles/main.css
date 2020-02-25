@@ -621,4 +621,157 @@ a {
 .services__text .services__subtitle {
   font-size: 14px;
 }
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  padding: 5em 0;
+  background: #f47b1e;
+  background-attachment: fixed;
+}
+
+.contact__text {
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 2em;
+  line-height: 2;
+  color: #fff;
+}
+
+@media (max-width: 960px) {
+  .contact__title {
+    padding: 2em;
+    font-size: 14px;
+  }
+}
+
+.contact__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  -ms-grid-rows: 1fr 4fr 1fr;
+      grid-template-rows: 1fr 4fr 1fr;
+      grid-template-areas: ". c-form-item ."  ". c-form-textarea ." ". c-form-button .";
+  grid-gap: 0.5em;
+}
+
+@media (max-width: 960px) {
+  .contact__form {
+    -ms-grid-rows: 1fr 2fr 0.5fr;
+        grid-template-rows: 1fr 2fr 0.5fr;
+  }
+}
+
+.form__wrapper {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: c-form-item;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.5em;
+}
+
+@media (max-width: 960px) {
+  .form__wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+.form__item {
+  padding: 0 1em;
+  font-size: 1em;
+  line-height: 2;
+  border: 2px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+@media (max-width: 960px) {
+  .form__item {
+    font-size: 14px;
+  }
+}
+
+.form__item::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__item:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__item::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__item::placeholder {
+  color: #fff;
+}
+
+.form__message {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: c-form-textarea;
+  padding: 0 1em;
+  font-size: 1em;
+  line-height: 2;
+  border: 2px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+@media (max-width: 960px) {
+  .form__message {
+    font-size: 0.75em;
+  }
+}
+
+.form__message::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__message:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__message::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__message::placeholder {
+  color: #fff;
+}
+
+.contact__button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: c-form-button;
+  border: 2px solid #fff;
+  font-size: 1em;
+  outline: none;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .contact__button {
+    font-size: 14px;
+  }
+}
+
+.contact__button:hover {
+  border: 2px solid transparent;
+  background: #111111;
+  color: #f47b1e;
+}
 /*# sourceMappingURL=main.css.map */

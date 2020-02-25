@@ -412,3 +412,78 @@ a {
         @include sm-title__font-size();
     }
 }
+.contact{
+    @include grid__flow(row);
+    padding: 5em 0;
+    background: $orangeColor;
+    background-attachment: fixed;
+}
+.contact__text{
+    text-align: center;
+}
+.contact__title{
+    font-size: 2em;
+    line-height: 2;
+    color: $fontColor;
+    @media(max-width: 960px){
+        padding: 2em;
+        @include sm-title__font-size();
+    }
+}
+.contact__form{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: ". c-form-item ." 
+                         ". c-form-textarea ."
+                         ". c-form-button .";
+    grid-gap: 0.5em;
+    @media(max-width: 960px){
+        grid-template-rows: 1fr 2fr 0.5fr;
+    }
+}
+.form__wrapper{
+    grid-area: c-form-item;
+    @include grid__flow(column);
+    grid-gap: 0.5em;
+    @media(max-width: 960px){
+        @include grid__flow(row);
+    }
+}
+.form__item{
+    @include input__style();
+    @media(max-width: 960px){
+        @include sm-title__font-size();
+    }
+}
+.form__item::placeholder{
+    color: $fontColor;
+}
+.form__message{
+    grid-area: c-form-textarea;
+    @include input__style();
+    @media(max-width: 960px){
+        @include sm-subtitle__font-size();
+    }
+}
+.form__message::placeholder{
+    color: $fontColor;
+}
+.contact__button{
+    grid-area: c-form-button;
+    border: 2px solid $fontColor;
+    font-size: 1em;
+    outline: none;
+    transition: .3s all ease;
+    background: transparent;
+    color: $fontColor;
+    cursor: pointer;
+    @media(max-width: 960px){
+        font-size: 14px;
+    }
+}
+.contact__button:hover{
+    border: 2px solid transparent;
+    background: $backgroundColor;
+    color: $orangeColor;
+}
