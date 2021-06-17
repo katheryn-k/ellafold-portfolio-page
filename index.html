@@ -3,255 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELFOLD-Portfolio</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <!--  Fontawesome  -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- OwlCarousel -->
     <link rel="stylesheet" href="./js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/main.css">
-    <title>ELFOLD</title>
 </head>
 <body class="page">
-    <!-- HEADER -->
-    <header class="header page__head" id="top">
-        <a class="header__logo" href="#">ELFOLD<span class="header__logo-gray">onepage</span></a>
+<!-- HEADER -->
+<header class="header page__head" id="top">
+    <a class="header__logo" href="#top">ELFOLD<span class="header__logo-gray">onepage</span></a>
     <!--  NAVBAR  -->
-        <nav class="navigation">
-            <a class="navbar__link_first" onclick="$('#top').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#top">Home</a>
-            <a class="navbar__link" onclick="$('#portfolio').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#portfolio">Portfolio</a>
-            <a class="navbar__link" onclick="$('#about').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#about">About</a>
-            <a class="navbar__link" onclick="$('#services').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#services">Services</a>
-            <a class="navbar__link" onclick="$('#contact').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#contact">Contact</a>
-        </nav>
-        <div class="header__content">
-            <h1 class="header__title wow fadeInDown">
-                Welcome! <br>
-                I am Ella Fold
-            </h1>
-            <p class="header__subtitle">
-                I am a New York based developer specialized in branding and web design. <br>
-                Take a look at my work and if you like it I would love to hear from you!
-            </p>
-            <div class="header__button">
-                <a class="button_learn-more" href="#">Learn more</a>
-                <a class="button_get-in-touch" href="#">Get in Touch</a>
-            </div>
-            <a class="next-section__link" onclick="$('.next-section').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#next-section">
-                <i class="next-section__icon fas fa-chevron-down"></i>
-            </a>
+    <nav class="navbar navigation">
+        <a class="navbar__link_first" onclick="$('#top').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});"
+           href="#top">Home</a>
+        <a class="navbar__link" onclick="$('#portfolio').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});"
+           href="#portfolio">Portfolio</a>
+        <a class="navbar__link" onclick="$('#about').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});"
+           href="#about">About</a>
+        <a class="navbar__link" onclick="$('#services').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});"
+           href="#services">Services</a>
+        <a class="navbar__link" onclick="$('#contact').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});"
+           href="#contact">Contact</a>
+    </nav>
+    <div class="header__content">
+        <h1 class="header__title wow fadeInDown">
+            Welcome! <br>
+            I am Ella Fold
+        </h1>
+        <p class="header__subtitle">
+            I am a New York based developer specialized in branding and web design. <br>
+            Take a look at my work and if you like it I would love to hear from you!
+        </p>
+        <div class="header__button">
+            <a class="button_learn-more" href="#">Learn more</a>
+            <a class="button_get-in-touch" href="#">Get in Touch</a>
         </div>
-    </header>
-    <!-- PORTFOLIO -->
-    <section class="portfolio next-section wow slideInUp" id="portfolio">
-        <div class="portfolio__text">
-            <h2 class="portfolio__title">
-                Recent projects I have designed &amp developed. Would love to add yours too…
-            </h2>
-        </div>
-        <div class="portfolio__gallery gallery__row-top wow slideInUp">
-            <div class="portfolio__img gallery__item-first"></div>
-            <div class="portfolio__img gallery__item-second"></div>
-            <div class="portfolio__img gallery__item-third"></div>   
-        </div>
-        <div class="portfolio__gallery gallery__row-bottom wow slideInUp" data-wow-delay="0.5s">
-            <div class="portfolio__img gallery__item-fourth"></div>
-            <div class="portfolio__img gallery__item-fifth"></div>
-            <div class="portfolio__img gallery__item-sixth"></div> 
-        </div>
-    </section>
-    <!-- ABOUT ME -->
-    <section class="about-me" id="about">
-        <img class="about-me__img wow slideInUp" src="./assets/img/designers/toa-heftiba.jpg" alt="girl">
-        <h2 class="about-me__title wow slideInUp">
-            This is me. Designer by day &amp developer by night. I never sleep… almost.
+        <a class="next-section__link"
+           onclick="$('.next-section').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" href="#next-section">
+            <i class="next-section__icon fas fa-chevron-down"></i>
+        </a>
+    </div>
+</header>
+<!-- PORTFOLIO -->
+<section class="portfolio next-section wow slideInUp" id="portfolio">
+    <div class="portfolio__text">
+        <h2 class="portfolio__title">
+            Recent projects I have designed & developed. Would love to add yours too…
         </h2>
-        <article class="about-me__text wow slideInUp">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-            Aenean commodo ligula eget dolor. Aenean massa. 
-            Cum sociis natoque penatibus et magnis dis parturient montes, 
-            nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-        </article>
-        <div class="about-me__counters wow slideInUp">
-            <div class="counters__wrapper">
-                <span class='counters__number numscroller' data-min='1' data-max='112' data-delay='15' data-increment='10'>112</span>
-                <p class="counters__text">
-                    successful projects
-                </p>
-            </div>
-            <div class="counters__wrapper">
-                <span class='counters__number numscroller' data-min='1' data-max='3265' data-delay='5' data-increment='10'>3265</span>
-                <p class="counters__text">
-                    days of experience
-                </p>
-            </div>
-            <div class="counters__wrapper">
-                <span class='counters__number numscroller' data-min='1' data-max='47' data-delay='20' data-increment='10'>47</span>
-                <p class="counters__text">
-                    happy clients
-                </p>
-            </div>
+    </div>
+    <div class="portfolio__gallery gallery__row-top wow slideInUp">
+        <div class="portfolio__img gallery__item-first">
+            <p class="visually-hidden">
+                Workplace
+            </p>
         </div>
-    </section>
-    <!-- REVIEWS / SLIDER SECTION -->
-    <section class="reviews">
-        <div class="reviews__title">
-            <h2 class="reviews__text wow slideInUp">
-                What my clients say about me and my work
-            </h2>
+        <div class="portfolio__img gallery__item-second">
+            <p class="visually-hidden">
+                Workplace
+            </p>
         </div>
-        <div class="reviews__slider owl-carousel">
-            <div class="slider__item">
-                <p class="slide__text">
-                    Ella is awesome to work with. <br>
-                    Incredibly talented, 
-                    easy to communicate with, responsive with next iterations, 
-                    and beautiful work. <br>
-                    Highly recommended!
-                </p>
-                <div class="slide__business-card">
-                    <img class="business-card__photo" src="./assets/img/designers/emiliano-vittoriosi.jpg" alt="men">
-                    <div class="business-card__info">
-                        <h3 class="business-card__name">
-                            Frank Miller
-                        </h3>
-                        <span class="business-card__position">CEO – <a  class="business-card__position__link" href="#">Millermedia</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="slider__item">
-                <p class="slide__text">
-                    We are very pleased with our new brand identity 
-                    and the way Ella conducts her business. <br>
-                    It has been a great experience working with 
-                    her and it’s already certain that we 
-                    will hire Ella again.
-                </p>
-                <div class="slide__business-card">
-                    <img class="business-card__photo" src="./assets/img/designers/craig-mckay.jpg" alt="men">
-                    <div class="business-card__info">
-                        <h3 class="business-card__name">
-                            Bill Andrews
-                        </h3>
-                        <span class="business-card__position">Designer – <a  class="business-card__position__link" href="#">Sandrew Inc.</a></span>
-                    </div>
-                </div>
-            </div>
+        <div class="portfolio__img gallery__item-third">
+            <p class="visually-hidden">
+                Workplace
+            </p>
         </div>
-    </section>
-    <!-- MAIN / OUR SERVICES -->
-    <main class="main services" id="services">
-        <h3 class="services__title wow slideInUp">Here is a list of things I can do for you</h3>
-        <div class="services__wrapper wow slideInUp">
-            <div class="services__item">
-                <div class="services__content">
-                    <i class="services__icon fas fa-paint-brush"></i>
-                    <div class="services__text">
-                        <h4 class="services__subtitle">WEB DESIGN</h4>
-                        <p class="services__paragraph">
-                            Cras dapibus. Vivamus elem nisi. 
-                            Aenean vulputate eleifend tellus. 
-                            Aenean leo ligula, port.
-                        </p>
-                    </div>
-                </div>
-                <div class="services__content">
-                    <i class="services__icon fas fa-tools"></i>
-                    <div class="services__text">
-                        <h4 class="services__subtitle">WEB DEVELOPMENT</h4>
-                        <p class="services__paragraph">
-                            Donec quam felis, ultricies nec, 
-                            pellentesque eu, pretium quis, sem. 
-                            Nut massa quis enim
-                        </p>
-                    </div>
-                </div>
-                <div class="services__content">
-                    <i class="services__icon fas fa-cog"></i>
-                    <div class="services__text">
-                        <h4 class="services__subtitle">24/7 SUPPORT</h4>
-                        <p class="services__paragraph">
-                            Lorem ipsum dolor sit amet, 
-                            consectetuer adipiscing elit. 
-                            Aene ligula eget dolor.
-                        </p>
-                    </div>
+    </div>
+    <div class="portfolio__gallery gallery__row-bottom wow slideInUp" data-wow-delay="0.5s">
+        <div class="portfolio__img gallery__item-fourth">
+            <p class="visually-hidden">
+                Desktop with computer
+            </p>
+        </div>
+        <div class="portfolio__img gallery__item-fifth">
+            <p class="visually-hidden">
+                Girl with the computer
+            </p>
+        </div>
+        <div class="portfolio__img gallery__item-sixth">
+            <p class="visually-hidden">
+                Hands on the computer keyboard
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ABOUT ME -->
+<section class="about-me" id="about">
+    <img class="about-me__img wow slideInUp" src="./assets/img/designers/toa-heftiba.jpg" alt="Ella Fold - developer">
+    <h2 class="about-me__title wow slideInUp">
+        This is me. Designer by day & developer by night. I never sleep… almost.
+    </h2>
+    <p class="about-me__text wow slideInUp">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo ligula eget dolor. Aenean massa.
+        Cum sociis natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus. Donec quam felis, ultricies nec,
+        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+    </p>
+    <div class="about-me__counters wow slideInUp">
+        <div class="counters__wrapper">
+            <span class='counters__number numscroller' data-min='1' data-max='112' data-delay='15' data-increment='10'>112</span>
+            <p class="counters__text">
+                successful projects
+            </p>
+        </div>
+        <div class="counters__wrapper">
+            <span class='counters__number numscroller' data-min='1' data-max='365' data-delay='5' data-increment='10'>3265</span>
+            <p class="counters__text">
+                days of experience
+            </p>
+        </div>
+        <div class="counters__wrapper">
+            <span class='counters__number numscroller' data-min='1' data-max='47' data-delay='20'
+                  data-increment='10'>47</span>
+            <p class="counters__text">
+                happy clients
+            </p>
+        </div>
+    </div>
+</section>
+<!-- REVIEWS / SLIDER SECTION -->
+<section class="reviews">
+    <div class="reviews__title">
+        <h2 class="reviews__text wow slideInUp">
+            What my clients say about me and my work
+        </h2>
+    </div>
+    <div class="reviews__slider owl-carousel">
+        <div class="slider__item">
+            <p class="slide__text">
+                Ella is awesome to work with. <br>
+                Incredibly talented,
+                easy to communicate with, responsive with next iterations,
+                and beautiful work. <br>
+                Highly recommended!
+            </p>
+            <div class="slide__business-card">
+                <img class="business-card__photo" src="./assets/img/designers/emiliano-vittoriosi.jpg"
+                     alt="Frank Miller - CEO Millermedia">
+                <div class="business-card__info">
+                    <h3 class="business-card__name">
+                        Frank Miller
+                    </h3>
+                    <span class="business-card__position">CEO – <a class="business-card__position__link" href="#">Millermedia</a></span>
                 </div>
             </div>
         </div>
-        <div class="services__wrapper wow slideInUp" data-wow-delay="0.3s">
-            <div class="services__item">
-                <div class="services__content">
-                    <i class="services__icon fas fa-search"></i>
-                    <div class="services__text">
-                        <h4 class="services__subtitle">SEO CONSULTING</h4>
-                        <p class="services__paragraph">
-                            Cras dapibus. Vivamus elem nisi. 
-                            Aenean vulputate eleifend tellus. 
-                            Aenean leo ligula, port.
-                        </p>
-                    </div>
-                </div>
-                <div class="services__content">
-                    <i class="services__icon fab fa-facebook"></i>
-                    <div class="services__text">
-                        <h4 class="services__subtitle">SOCIAL MEDIA</h4>
-                        <p class="services__paragraph">
-                            Aenean commodo ligula eget dolor. 
-                            Lorem ipsum dolor sit amet, 
-                            consectetuer adipiscing elit.
-                        </p>
-                    </div>
-                </div>
-                <div class="services__content">
-                    <i class="services__icon fas fa-shopping-cart"></i>
-                    <div class="services__text">
-                        <h4 class="services__subtitle">E-COMMERCE</h4>
-                        <p class="services__paragraph">
-                            Vivamus elementum semper nisi. 
-                            Aenean vulputate eleifend tellus. 
-                            Cras dapibus.
-                        </p>
-                    </div>
+        <div class="slider__item">
+            <p class="slide__text">
+                We are very pleased with our new brand identity
+                and the way Ella conducts her business. <br>
+                It has been a great experience working with
+                her and it’s already certain that we
+                will hire Ella again.
+            </p>
+            <div class="slide__business-card">
+                <img class="business-card__photo" src="./assets/img/designers/craig-mckay.jpg"
+                     alt="Bill Andrews - Designer Sandrew Inc.">
+                <div class="business-card__info">
+                    <h3 class="business-card__name">
+                        Bill Andrews
+                    </h3>
+                    <span class="business-card__position">Designer – <a class="business-card__position__link" href="#">Sandrew Inc.</a></span>
                 </div>
             </div>
         </div>
-    </main>
-    <!-- CONTACT FORM -->
-    <section class="contact" id="contact">
-        <div class="contact__text">
-            <h2 class="contact__title wow slideInUp">
-                Do you like my work? Want to get in touch? <br>
-                Use the form below!
-            </h2>
-        </div>
-        <form class="contact__form" action="#">
-            <div class="form__wrapper">
-                <input class="form__item" type="text" name="name" required placeholder="Name">
-                <input class="form__item" type="email" name="email" required placeholder="E-mail">
+    </div>
+</section>
+<!-- MAIN / OUR SERVICES -->
+<main class="main services" id="services">
+    <h3 class="services__title wow slideInUp">Here is a list of things I can do for you</h3>
+    <div class="services__wrapper wow slideInUp">
+        <div class="services__item">
+            <div class="services__content">
+                <i class="services__icon fas fa-paint-brush"></i>
+                <div class="services__text">
+                    <h4 class="services__subtitle">WEB DESIGN</h4>
+                    <p class="services__paragraph">
+                        Cras dapibus. Vivamus elem nisi.
+                        Aenean vulputate eleifend tellus.
+                        Aenean leo ligula, port.
+                    </p>
+                </div>
             </div>
-            <textarea class="form__message" name="message" rows="7" placeholder="Enter your message here..."></textarea>
-            <button class="contact__button" type="submit">Submit</button>
-        </form>
-    </section>
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer__text">
-            <h2 class="footer__title wow slideInUp">
-                Or follow me on Dribbble, Facebook or Twitter
-            </h2>
+            <div class="services__content">
+                <i class="services__icon fas fa-tools"></i>
+                <div class="services__text">
+                    <h4 class="services__subtitle">WEB DEVELOPMENT</h4>
+                    <p class="services__paragraph">
+                        Donec quam felis, ultricies nec,
+                        pellentesque eu, pretium quis, sem.
+                        Nut massa quis enim
+                    </p>
+                </div>
+            </div>
+            <div class="services__content">
+                <i class="services__icon fas fa-cog"></i>
+                <div class="services__text">
+                    <h4 class="services__subtitle">24/7 SUPPORT</h4>
+                    <p class="services__paragraph">
+                        Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit.
+                        Aene ligula eget dolor.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="social__links">
-            <a class="social__link wow slideInLeft" href="#" target="_blank"><i class="social__icon fab fa-facebook"></i></a>
-            <a class="social__link" data-wow-delay="0.1s" href="#" target="_blank"><i class="social__icon fab fa-dribbble"></i></a>
-            <a class="social__link wow slideInRight" href="#" target="_blank"><i class="social__icon fab fa-twitter"></i></a>
+    </div>
+    <div class="services__wrapper wow slideInUp" data-wow-delay="0.3s">
+        <div class="services__item">
+            <div class="services__content">
+                <i class="services__icon fas fa-search"></i>
+                <div class="services__text">
+                    <h4 class="services__subtitle">SEO CONSULTING</h4>
+                    <p class="services__paragraph">
+                        Cras dapibus. Vivamus elem nisi.
+                        Aenean vulputate eleifend tellus.
+                        Aenean leo ligula, port.
+                    </p>
+                </div>
+            </div>
+            <div class="services__content">
+                <i class="services__icon fab fa-facebook"></i>
+                <div class="services__text">
+                    <h4 class="services__subtitle">SOCIAL MEDIA</h4>
+                    <p class="services__paragraph">
+                        Aenean commodo ligula eget dolor.
+                        Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="services__content">
+                <i class="services__icon fas fa-shopping-cart"></i>
+                <div class="services__text">
+                    <h4 class="services__subtitle">E-COMMERCE</h4>
+                    <p class="services__paragraph">
+                        Vivamus elementum semper nisi.
+                        Aenean vulputate eleifend tellus.
+                        Cras dapibus.
+                    </p>
+                </div>
+            </div>
         </div>
-    </footer>
-    
+    </div>
+</main>
+<!-- CONTACT FORM -->
+<section class="contact" id="contact">
+    <div class="contact__text">
+        <h2 class="contact__title wow slideInUp">
+            Do you like my work? Want to get in touch? <br>
+            Use the form below!
+        </h2>
+    </div>
+    <form class="contact__form" action="#">
+        <div class="form__wrapper">
+            <input class="form__item" type="text" name="name" required placeholder="Name">
+            <input class="form__item" type="email" name="email" required placeholder="E-mail">
+        </div>
+        <textarea class="form__message" name="message" rows="7" placeholder="Enter your message here..."></textarea>
+        <button class="contact__button" type="submit">Submit</button>
+    </form>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__text">
+        <h2 class="footer__title wow slideInUp">
+            Or follow me on Dribbble, Facebook or Twitter
+        </h2>
+    </div>
+    <div class="social__links">
+        <a class="social__link wow slideInLeft" href="#" target="_blank"><i
+                class="social__icon fab fa-facebook"></i></a>
+        <a class="social__link" data-wow-delay="0.1s" href="#" target="_blank"><i
+                class="social__icon fab fa-dribbble"></i></a>
+        <a class="social__link wow slideInRight" href="#" target="_blank"><i
+                class="social__icon fab fa-twitter"></i></a>
+    </div>
+</footer>
+
 <!-- Scripts -->
 
 <!-- jquery -->
